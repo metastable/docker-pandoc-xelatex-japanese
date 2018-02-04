@@ -4,8 +4,6 @@ MAINTAINER metastable "ishii@kiwamu.net"
 
 LABEL version="1.0.0"
 
-ENV DEBIAN_FRONTEND noninteractive
-
 RUN apt-get update \
     && apt-get dist-upgrade -y --no-install-recommends -o Dpkg::Options::="--force-confold" \
     && apt-get install -y --no-install-recommends -o Dpkg::Options::="--force-confold" \
